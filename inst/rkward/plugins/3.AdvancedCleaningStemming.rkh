@@ -1,0 +1,54 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		3. Advanced Cleaning &amp; Stemming
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<caption id="tab_InptStpw" />
+		<setting id="ac_corpus">
+		</setting>
+		<caption id="frm_CstmStpw" />
+		<setting id="ac_do_stop">
+		</setting>
+		<setting id="ac_stop_var">
+		</setting>
+		<caption id="tab_ReplcStm" />
+		<caption id="frm_MnlSbstt" />
+		<setting id="ac_do_subs">
+		</setting>
+		<setting id="ac_subs_matrix">
+		</setting>
+		<caption id="frm_Stemming" />
+		<setting id="ac_do_stem">
+		</setting>
+		<setting id="ac_stem_lang">
+		</setting>
+		<caption id="tab_Output" />
+		<setting id="ac_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

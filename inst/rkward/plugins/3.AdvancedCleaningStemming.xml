@@ -1,0 +1,60 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="3.AdvancedCleaningStemming.js" />
+	<help file="3.AdvancedCleaningStemming.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Advanced Cleaning &amp; Stemming">
+		<tabbook>
+			<tab label="Input &amp; Stopwords" id="tab_InptStpw">
+				<row id="row_vTCCSCSRCS">
+					<varselector id="var_sel_ac" />
+					<column id="clm_vTCCSCSRCS">
+						<varslot id="ac_corpus" label="Target Corpus" source="var_sel_ac" required="true" />
+						<frame label="Custom Stopwords" id="frm_CstmStpw">
+							<checkbox id="ac_do_stop" label="Remove Custom Stopwords" value="TRUE" />
+							<varslot id="ac_stop_var" label="Custom Stopwords Vector (e.g., filtro.data[['P']])" source="var_sel_ac" />
+						</frame>
+					</column>
+				</row>
+			</tab>
+			<tab label="Replace &amp; Stem" id="tab_ReplcStm">
+				<column id="clm_fMSMSAMRTR">
+					<frame label="Manual Substitutions" id="frm_MnlSbstt">
+						<checkbox id="ac_do_subs" label="Apply Manual Replacements" value="TRUE" />
+						<matrix id="ac_subs_matrix" label="Replacement Rules (Col 1: Pattern, Col 2: Replacement)" mode="string" />
+					</frame>
+					<frame label="Stemming" id="frm_Stemming">
+						<checkbox id="ac_do_stem" label="Apply Stemming (Reduce to root)" value="TRUE" />
+						<dropdown id="ac_stem_lang" label="Stemming Language">
+							<option label="English" value="english" checked="true" />
+							<option label="Spanish" value="spanish" />
+						</dropdown>
+					</frame>
+				</column>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<column id="clm_sSACWARNIN">
+					<saveobject label="Save Advanced Corpus as" checkable="true" checked="true" initial="advanced_corpus" id="ac_save" />
+					<text id="txt_WARNINGD">
+						WARNING: Do NOT edit the saved Corpus in the Workspace viewer. Use 'Inspect Corpus'.
+					</text>
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

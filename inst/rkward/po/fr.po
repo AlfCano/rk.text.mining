@@ -1,0 +1,190 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.text.mining 0.0.1\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1. Build & Clean Corpus"
+msgstr "1. Construire et Nettoyer le Corpus"
+
+msgid "2. Inspect Corpus"
+msgstr "2. Inspecter le Corpus"
+
+msgid "3. Advanced Cleaning & Stemming"
+msgstr "3. Nettoyage Avancé et Racinisation"
+
+msgid "4. Frequencies & DTM"
+msgstr "4. Fréquences et Matrice DTM"
+
+msgid "5. Word Associations"
+msgstr "5. Associations de Mots"
+
+msgid "Corpus Builder"
+msgstr "Constructeur de Corpus"
+
+msgid "Import TXT files and clean the Corpus (stopwords, punctuation)."
+msgstr "Importer des fichiers TXT et nettoyer le Corpus (mots vides, ponctuation)."
+
+msgid "Input"
+msgstr "Entrée"
+
+msgid "Cleaning Rules"
+msgstr "Règles de Nettoyage"
+
+msgid "Output"
+msgstr "Sortie"
+
+msgid "Text Files Directory"
+msgstr "Répertoire des Fichiers Texte"
+
+msgid "Language (Standard Stopwords)"
+msgstr "Langue (Mots vides standards)"
+
+msgid "Convert to Lower Case"
+msgstr "Convertir en Minuscules"
+
+msgid "Remove Punctuation"
+msgstr "Supprimer la Ponctuation"
+
+msgid "Remove Numbers"
+msgstr "Supprimer les Nombres"
+
+msgid "Strip Extra Whitespaces"
+msgstr "Supprimer les Espaces Supplémentaires"
+
+msgid "Remove Standard Stop Words"
+msgstr "Supprimer les Mots Vides Standards"
+
+msgid "Apply Stemming (Reduce to root)"
+msgstr "Appliquer la Racinisation (Réduire à la racine)"
+
+msgid "Save Clean Corpus as"
+msgstr "Enregistrer le Corpus Nettoyé sous"
+
+msgid "WARNING: Do NOT double-click or try to edit the saved Corpus object in the RKWard Workspace viewer. Corpus objects are complex lists and will crash the GUI data editor. Use the 'Inspect Corpus' plugin to view its contents safely."
+msgstr "AVERTISSEMENT : NE double-cliquez PAS ou n'essayez pas de modifier l'objet Corpus enregistré dans l'espace de travail RKWard. Les objets Corpus sont des listes complexes et feront planter l'éditeur de données. Utilisez le module 'Inspect Corpus' pour afficher son contenu en toute sécurité."
+
+msgid "Inspect Corpus"
+msgstr "Inspecter le Corpus"
+
+msgid "Safely inspects the text and metadata of a Corpus object without crashing RKWard."
+msgstr "Inspecte en toute sécurité le texte et les métadonnées d'un objet Corpus sans faire planter RKWard."
+
+msgid "Corpus Object to Inspect"
+msgstr "Objet Corpus à Inspecter"
+
+msgid "Number of documents to display"
+msgstr "Nombre de documents à afficher"
+
+msgid "Truncate text in output"
+msgstr "Tronquer le texte dans la sortie"
+
+msgid "Max characters per document"
+msgstr "Caractères max par document"
+
+msgid "Display Limits"
+msgstr "Limites d'Affichage"
+
+msgid "Displays the actual text content of the corpus formatted safely as a table."
+msgstr "Affiche le contenu textuel réel du corpus formaté en toute sécurité sous forme de tableau."
+
+msgid "Inspection Options"
+msgstr "Options d'Inspection"
+
+msgid "Advanced Cleaning & Stemming"
+msgstr "Nettoyage Avancé et Racinisation"
+
+msgid "Aplica listas personalizadas de stopwords, sustitución manual y stemming."
+msgstr "Applique des listes de mots vides personnalisées, des substitutions manuelles et la racinisation."
+
+msgid "Target Corpus"
+msgstr "Corpus Cible"
+
+msgid "Target Corpus Object"
+msgstr "Objet Corpus Cible"
+
+msgid "Input & Stopwords"
+msgstr "Entrée & Mots Vides"
+
+msgid "Replace & Stem"
+msgstr "Remplacer & Racinisation"
+
+msgid "Remove Custom Stopwords"
+msgstr "Supprimer Mots Vides Personnalisés"
+
+msgid "Custom Stopwords Vector (e.g., filtro.data[['P']])"
+msgstr "Vecteur de Mots Vides Personnalisés (ex: filtro.data[['P']])"
+
+msgid "Apply Manual Replacements"
+msgstr "Appliquer des Remplacements Manuels"
+
+msgid "Manual Substitutions"
+msgstr "Substitutions Manuelles"
+
+msgid "Replacement Rules (Col 1: Pattern, Col 2: Replacement)"
+msgstr "Règles de Remplacement (Col 1: Modèle, Col 2: Remplacement)"
+
+msgid "Stemming Language"
+msgstr "Langue de Racinisation"
+
+msgid "Stemming"
+msgstr "Racinisation"
+
+msgid "Save Advanced Corpus as"
+msgstr "Enregistrer le Corpus Avancé sous"
+
+msgid "WARNING: Do NOT edit the saved Corpus in the Workspace viewer. Use 'Inspect Corpus'."
+msgstr "AVERTISSEMENT : NE modifiez PAS le Corpus enregistré dans l'espace de travail. Utilisez 'Inspect Corpus'."
+
+msgid "Term Frequencies & DTM"
+msgstr "Fréquences des Termes et DTM"
+
+msgid "Creates a Document-Term Matrix and extracts frequent words."
+msgstr "Crée une Matrice Document-Terme et extrait les mots fréquents."
+
+msgid "Input & Control"
+msgstr "Entrée & Contrôle"
+
+msgid "Min Word Length"
+msgstr "Longueur Min du Mot"
+
+msgid "Max Word Length"
+msgstr "Longueur Max du Mot"
+
+msgid "Min Document Frequency Bounds"
+msgstr "Limite Min Fréquence Document"
+
+msgid "Max Document Frequency Bounds"
+msgstr "Limite Max Fréquence Document"
+
+msgid "Word Lengths"
+msgstr "Longueurs de Mots"
+
+msgid "Global Bounds"
+msgstr "Limites Globales"
+
+msgid "Save DocumentTermMatrix as"
+msgstr "Enregistrer DocumentTermMatrix sous"
+
+msgid "Save Frequencies DataFrame as"
+msgstr "Enregistrer DataFrame de Fréquences sous"
+
+msgid "Word Associations"
+msgstr "Associations de Mots"
+
+msgid "Finds associations (correlations) between specific words in the DTM."
+msgstr "Trouve des associations (corrélations) entre des mots spécifiques dans le DTM."
+
+msgid "DocumentTermMatrix Object"
+msgstr "Objet DocumentTermMatrix"
+
+msgid "Target Words (comma separated)"
+msgstr "Mots Cibles (séparés par des virgules)"
+
+msgid "Correlation Threshold"
+msgstr "Seuil de Corrélation"
+
+msgid "Association Settings"
+msgstr "Paramètres d'Association"

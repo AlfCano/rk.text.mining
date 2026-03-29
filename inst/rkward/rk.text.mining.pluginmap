@@ -1,0 +1,157 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="1BuildCleanCorpus"
+	id="1BuildCleanCorpus_rkward"
+	po_id="1BuildCleanCorpus_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.text.mining"
+		shortinfo="RKWard Plugin Suite for Text Mining (tm), Corpus Cleaning, and Word Associations."
+		longinfo="RKWard Plugin Suite for Text Mining (tm), Corpus Cleaning, and Word Associations."
+		version="0.0.1"
+		releasedate="2026-03-29"
+		url="https://github.com/AlfCano/rk.text.mining"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano Robles"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_1BuildClenCrps2InspctCrps"
+			label="2. Inspect Corpus"
+			type="standard"
+			file="plugins/2.InspectCorpus.xml"
+		>
+		</component>
+		<component
+			id="cmp_1BldClnCrps3AdvncdClnngSt"
+			label="3. Advanced Cleaning &amp; Stemming"
+			type="standard"
+			file="plugins/3.AdvancedCleaningStemming.xml"
+		>
+		</component>
+		<component
+			id="cmp_1BuildCleanCrps4FrqncsDTM"
+			label="4. Frequencies &amp; DTM"
+			type="standard"
+			file="plugins/4.FrequenciesDTM.xml"
+		>
+		</component>
+		<component
+			id="cmp_1BuildClenCrps5WrdAssctns"
+			label="5. Word Associations"
+			type="standard"
+			file="plugins/5.WordAssociations.xml"
+		>
+		</component>
+		<component
+			id="cmp_1BuildClenCrps1BldClnCrps"
+			label="1. Build &amp; Clean Corpus"
+			type="standard"
+			file="plugins/1.BuildCleanCorpus.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="TextMining"
+				label="Text Mining"
+			>
+				<entry
+					component="cmp_1BuildClenCrps2InspctCrps"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="TextMining"
+				label="Text Mining"
+			>
+				<entry
+					component="cmp_1BldClnCrps3AdvncdClnngSt"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="TextMining"
+				label="Text Mining"
+			>
+				<entry
+					component="cmp_1BuildCleanCrps4FrqncsDTM"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="TextMining"
+				label="Text Mining"
+			>
+				<entry
+					component="cmp_1BuildClenCrps5WrdAssctns"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="TextMining"
+				label="Text Mining"
+			>
+				<entry
+					component="cmp_1BuildClenCrps1BldClnCrps"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

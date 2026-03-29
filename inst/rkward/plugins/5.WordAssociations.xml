@@ -1,0 +1,37 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="5.WordAssociations.js" />
+	<help file="5.WordAssociations.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Word Associations">
+		<tabbook id="tbbk_Input">
+			<tab label="Input" id="tab_Input">
+				<row id="row_vDTMOASAST">
+					<varselector id="var_sel_wa" />
+					<column id="clm_vDTMOASAST">
+						<varslot id="wa_dtm" label="DocumentTermMatrix Object" source="var_sel_wa" required="true" />
+						<frame label="Association Settings" id="frm_AssctnSt">
+							<input label="Target Words (comma separated)" id="wa_words" initial="community, children, works" required="true" />
+							<spinbox label="Correlation Threshold" id="wa_cor" initial="0.9" min="0" max="1" />
+						</frame>
+					</column>
+				</row>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

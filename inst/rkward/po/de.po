@@ -1,0 +1,190 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.text.mining 0.0.1\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1. Build & Clean Corpus"
+msgstr "1. Korpus Erstellen & Bereinigen"
+
+msgid "2. Inspect Corpus"
+msgstr "2. Korpus Inspizieren"
+
+msgid "3. Advanced Cleaning & Stemming"
+msgstr "3. Erweiterte Bereinigung & Stemming"
+
+msgid "4. Frequencies & DTM"
+msgstr "4. Häufigkeiten & DTM"
+
+msgid "5. Word Associations"
+msgstr "5. Wortassoziationen"
+
+msgid "Corpus Builder"
+msgstr "Korpus-Ersteller"
+
+msgid "Import TXT files and clean the Corpus (stopwords, punctuation)."
+msgstr "Importieren Sie TXT-Dateien und bereinigen Sie das Korpus (Stoppwörter, Zeichensetzung)."
+
+msgid "Input"
+msgstr "Eingabe"
+
+msgid "Cleaning Rules"
+msgstr "Bereinigungsregeln"
+
+msgid "Output"
+msgstr "Ausgabe"
+
+msgid "Text Files Directory"
+msgstr "Verzeichnis für Textdateien"
+
+msgid "Language (Standard Stopwords)"
+msgstr "Sprache (Standard-Stoppwörter)"
+
+msgid "Convert to Lower Case"
+msgstr "In Kleinbuchstaben umwandeln"
+
+msgid "Remove Punctuation"
+msgstr "Satzzeichen entfernen"
+
+msgid "Remove Numbers"
+msgstr "Zahlen entfernen"
+
+msgid "Strip Extra Whitespaces"
+msgstr "Zusätzliche Leerzeichen entfernen"
+
+msgid "Remove Standard Stop Words"
+msgstr "Standard-Stoppwörter entfernen"
+
+msgid "Apply Stemming (Reduce to root)"
+msgstr "Stemming anwenden (Auf Wortstamm reduzieren)"
+
+msgid "Save Clean Corpus as"
+msgstr "Bereinigtes Korpus speichern als"
+
+msgid "WARNING: Do NOT double-click or try to edit the saved Corpus object in the RKWard Workspace viewer. Corpus objects are complex lists and will crash the GUI data editor. Use the 'Inspect Corpus' plugin to view its contents safely."
+msgstr "WARNUNG: Doppelklicken oder bearbeiten Sie das gespeicherte Korpus-Objekt NICHT im RKWard-Arbeitsbereich. Korpus-Objekte sind komplexe Listen und bringen den GUI-Dateneditor zum Absturz. Verwenden Sie das Plugin 'Inspect Corpus', um den Inhalt sicher anzuzeigen."
+
+msgid "Inspect Corpus"
+msgstr "Korpus Inspizieren"
+
+msgid "Safely inspects the text and metadata of a Corpus object without crashing RKWard."
+msgstr "Überprüft sicher Text und Metadaten eines Korpus-Objekts, ohne RKWard zum Absturz zu bringen."
+
+msgid "Corpus Object to Inspect"
+msgstr "Zu inspizierendes Korpus-Objekt"
+
+msgid "Number of documents to display"
+msgstr "Anzahl der anzuzeigenden Dokumente"
+
+msgid "Truncate text in output"
+msgstr "Text in der Ausgabe abschneiden"
+
+msgid "Max characters per document"
+msgstr "Maximale Zeichen pro Dokument"
+
+msgid "Display Limits"
+msgstr "Anzeigegrenzen"
+
+msgid "Displays the actual text content of the corpus formatted safely as a table."
+msgstr "Zeigt den tatsächlichen Textinhalt des Korpus sicher als Tabelle formatiert an."
+
+msgid "Inspection Options"
+msgstr "Inspektionsoptionen"
+
+msgid "Advanced Cleaning & Stemming"
+msgstr "Erweiterte Bereinigung & Stemming"
+
+msgid "Aplica listas personalizadas de stopwords, sustitución manual y stemming."
+msgstr "Wendet benutzerdefinierte Stoppwortlisten, manuelle Ersetzungen und Stemming an."
+
+msgid "Target Corpus"
+msgstr "Ziel-Korpus"
+
+msgid "Target Corpus Object"
+msgstr "Ziel-Korpus-Objekt"
+
+msgid "Input & Stopwords"
+msgstr "Eingabe & Stoppwörter"
+
+msgid "Replace & Stem"
+msgstr "Ersetzen & Stemming"
+
+msgid "Remove Custom Stopwords"
+msgstr "Benutzerdefinierte Stoppwörter entfernen"
+
+msgid "Custom Stopwords Vector (e.g., filtro.data[['P']])"
+msgstr "Vektor für benutzerdefinierte Stoppwörter (z.B. filtro.data[['P']])"
+
+msgid "Apply Manual Replacements"
+msgstr "Manuelle Ersetzungen anwenden"
+
+msgid "Manual Substitutions"
+msgstr "Manuelle Ersetzungen"
+
+msgid "Replacement Rules (Col 1: Pattern, Col 2: Replacement)"
+msgstr "Ersetzungsregeln (Spalte 1: Muster, Spalte 2: Ersatz)"
+
+msgid "Stemming Language"
+msgstr "Stemming-Sprache"
+
+msgid "Stemming"
+msgstr "Stemming"
+
+msgid "Save Advanced Corpus as"
+msgstr "Erweitertes Korpus speichern als"
+
+msgid "WARNING: Do NOT edit the saved Corpus in the Workspace viewer. Use 'Inspect Corpus'."
+msgstr "WARNUNG: Bearbeiten Sie das gespeicherte Korpus NICHT im Arbeitsbereich-Viewer. Verwenden Sie 'Inspect Corpus'."
+
+msgid "Term Frequencies & DTM"
+msgstr "Begriffshäufigkeiten & DTM"
+
+msgid "Creates a Document-Term Matrix and extracts frequent words."
+msgstr "Erstellt eine Dokument-Term-Matrix und extrahiert häufige Wörter."
+
+msgid "Input & Control"
+msgstr "Eingabe & Steuerung"
+
+msgid "Min Word Length"
+msgstr "Minimale Wortlänge"
+
+msgid "Max Word Length"
+msgstr "Maximale Wortlänge"
+
+msgid "Min Document Frequency Bounds"
+msgstr "Untere Grenze der Dokumenthäufigkeit"
+
+msgid "Max Document Frequency Bounds"
+msgstr "Obere Grenze der Dokumenthäufigkeit"
+
+msgid "Word Lengths"
+msgstr "Wortlängen"
+
+msgid "Global Bounds"
+msgstr "Globale Grenzen"
+
+msgid "Save DocumentTermMatrix as"
+msgstr "DocumentTermMatrix speichern als"
+
+msgid "Save Frequencies DataFrame as"
+msgstr "Häufigkeits-DataFrame speichern als"
+
+msgid "Word Associations"
+msgstr "Wortassoziationen"
+
+msgid "Finds associations (correlations) between specific words in the DTM."
+msgstr "Findet Assoziationen (Korrelationen) zwischen bestimmten Wörtern in der DTM."
+
+msgid "DocumentTermMatrix Object"
+msgstr "DocumentTermMatrix-Objekt"
+
+msgid "Target Words (comma separated)"
+msgstr "Zielwörter (kommagetrennt)"
+
+msgid "Correlation Threshold"
+msgstr "Korrelationsschwelle"
+
+msgid "Association Settings"
+msgstr "Assoziationseinstellungen"

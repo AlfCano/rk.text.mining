@@ -1,0 +1,64 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="1.BuildCleanCorpus.js" />
+	<help file="1.BuildCleanCorpus.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Corpus Builder">
+		<tabbook>
+			<tab label="Input" id="tab_Input">
+				<column id="clm_bTFDLSSESP">
+					<browser label="Text Files Directory" type="dir" id="cb_dir" />
+					<dropdown id="cb_lang" label="Language (Standard Stopwords)">
+						<option label="English" value="english" checked="true" />
+						<option label="Spanish" value="spanish" />
+						<option label="Portuguese" value="portuguese" />
+						<option label="French" value="french" />
+						<option label="German" value="german" />
+						<option label="Italian" value="italian" />
+						<option label="Dutch" value="dutch" />
+						<option label="Russian" value="russian" />
+						<option label="Swedish" value="swedish" />
+						<option label="Danish" value="danish" />
+						<option label="Finnish" value="finnish" />
+						<option label="Hungarian" value="hungarian" />
+						<option label="Norwegian" value="norwegian" />
+						<option label="Romanian" value="romanian" />
+					</dropdown>
+				</column>
+			</tab>
+			<tab label="Cleaning Rules" id="tab_ClnngRls">
+				<column id="clm_cCLCTRUERP">
+					<checkbox id="cb_lower" label="Convert to Lower Case" value="TRUE" checked="true" />
+					<checkbox id="cb_punct" label="Remove Punctuation" value="TRUE" checked="true" />
+					<checkbox id="cb_nums" label="Remove Numbers" value="TRUE" checked="true" />
+					<checkbox id="cb_spaces" label="Strip Extra Whitespaces" value="TRUE" checked="true" />
+					<checkbox id="cb_stop" label="Remove Standard Stop Words" value="TRUE" checked="true" />
+					<checkbox id="cb_stem" label="Apply Stemming (Reduce to root)" value="TRUE" />
+				</column>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<column id="clm_sSCCWARNIN">
+					<saveobject label="Save Clean Corpus as" checkable="true" checked="true" initial="clean_corpus" id="cb_save" />
+					<text id="txt_WARNINGD">
+						WARNING: Do NOT double-click or try to edit the saved Corpus object in the RKWard Workspace viewer. Corpus objects are complex lists and will crash the GUI data editor. Use the 'Inspect Corpus' plugin to view its contents safely.
+					</text>
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

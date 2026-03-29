@@ -1,0 +1,41 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="2.InspectCorpus.js" />
+	<help file="2.InspectCorpus.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Inspect Corpus">
+		<tabbook id="tbbk_InspctnO">
+			<tab label="Inspection Options" id="tab_InspctnO">
+				<row id="row_vCOIN51DLD">
+					<varselector id="var_sel_ic" />
+					<column id="clm_vCOIN51DLD">
+						<varslot id="ic_corpus" label="Corpus Object to Inspect" source="var_sel_ic" required="true" />
+						<spinbox label="Number of documents to display" id="ic_n_docs" initial="5" min="1" />
+						<frame label="Display Limits" id="frm_DsplyLmt">
+							<checkbox id="ic_trunc_cbox" label="Truncate text in output" value="TRUE" checked="true" />
+							<spinbox label="Max characters per document" id="ic_max_chars" initial="500" min="10" max="1e+05" />
+						</frame>
+						<text id="txt_Dsplysth">
+							Displays the actual text content of the corpus formatted safely as a table.
+						</text>
+					</column>
+				</row>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

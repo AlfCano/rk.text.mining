@@ -1,0 +1,47 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="4.FrequenciesDTM.js" />
+	<help file="4.FrequenciesDTM.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Term Frequencies &amp; DTM">
+		<tabbook>
+			<tab label="Input &amp; Control" id="tab_InptCntr">
+				<row id="row_vTCOWLWLMW">
+					<varselector id="var_sel_tf" />
+					<column id="clm_vTCOWLWLMW">
+						<varslot id="tf_corpus" label="Target Corpus Object" source="var_sel_tf" required="true" />
+						<frame label="Word Lengths" id="frm_WrdLngth">
+							<spinbox label="Min Word Length" id="tf_min_len" initial="4" min="1" />
+							<spinbox label="Max Word Length" id="tf_max_len" initial="20" min="2" />
+						</frame>
+						<frame label="Global Bounds" id="frm_GlblBnds">
+							<spinbox label="Min Document Frequency Bounds" id="tf_min_bnd" initial="3" min="1" />
+							<spinbox label="Max Document Frequency Bounds" id="tf_max_bnd" initial="27" min="2" />
+						</frame>
+					</column>
+				</row>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<column id="clm_svSDTMSFDF">
+					<saveobject label="Save DocumentTermMatrix as" checkable="true" checked="true" initial="dtm_obj" id="tf_save_dtm" />
+					<saveobject label="Save Frequencies DataFrame as" checkable="true" checked="true" initial="frecpalabras.data" id="tf_save_df" />
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>
