@@ -43,6 +43,18 @@
 						<dropdown id="ac_stem_lang" label="Stemming Language">
 							<option label="English" value="english" checked="true" />
 							<option label="Spanish" value="spanish" />
+							<option label="Portuguese" value="portuguese" />
+							<option label="French" value="french" />
+							<option label="German" value="german" />
+							<option label="Italian" value="italian" />
+							<option label="Dutch" value="dutch" />
+							<option label="Russian" value="russian" />
+							<option label="Swedish" value="swedish" />
+							<option label="Danish" value="danish" />
+							<option label="Finnish" value="finnish" />
+							<option label="Hungarian" value="hungarian" />
+							<option label="Norwegian" value="norwegian" />
+							<option label="Romanian" value="romanian" />
 						</dropdown>
 					</frame>
 				</column>

@@ -2,8 +2,8 @@ Package: rk.text.mining
 Type: Package
 Title: RKWard Plugin Suite for Text Mining (tm), Corpus Cleaning, and
         Word Associations.
-Version: 0.0.1
-Date: 2026-03-29
+Version: 0.0.2
+Date: 2026-06-11
 Author: Alfonso Cano Robles
 Maintainer: Alfonso Cano Robles <alfonso.cano@correo.buap.mx>
 Enhances: rkward

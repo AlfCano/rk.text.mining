@@ -15,7 +15,7 @@ local({
     ),
     about = list(
       desc = "RKWard Plugin Suite for Text Mining (tm), Corpus Cleaning, and Word Associations.",
-      version = "0.0.1",
+      version = "0.0.2",
       url = "https://github.com/AlfCano/rk.text.mining",
       license = "GPL (>= 3)"
     )
@@ -186,7 +186,23 @@ local({
   ac_subs_matrix <- rk.XML.matrix("Replacement Rules (Col 1: Pattern, Col 2: Replacement)", rows = 1, columns = 2, min = 0, mode = "string", id.name = "ac_subs_matrix")
 
   ac_do_stem <- rk.XML.cbox("Apply Stemming (Reduce to root)", value = "TRUE", chk = FALSE, id.name = "ac_do_stem")
-  ac_stem_lang <- rk.XML.dropdown("Stemming Language", options = list("English" = list(val = "english", chk = TRUE), "Spanish" = list(val = "spanish")), id.name = "ac_stem_lang")
+
+  ac_stem_lang <- rk.XML.dropdown("Stemming Language", options = list(
+    "English" = list(val = "english", chk = TRUE),
+    "Spanish" = list(val = "spanish"),
+    "Portuguese" = list(val = "portuguese"),
+    "French" = list(val = "french"),
+    "German" = list(val = "german"),
+    "Italian" = list(val = "italian"),
+    "Dutch" = list(val = "dutch"),
+    "Russian" = list(val = "russian"),
+    "Swedish" = list(val = "swedish"),
+    "Danish" = list(val = "danish"),
+    "Finnish" = list(val = "finnish"),
+    "Hungarian" = list(val = "hungarian"),
+    "Norwegian" = list(val = "norwegian"),
+    "Romanian" = list(val = "romanian")
+  ), id.name = "ac_stem_lang")
 
   ac_save <- rk.XML.saveobj("Save Advanced Corpus as", chk = TRUE, initial = "advanced_corpus", id.name = "ac_save")
 
